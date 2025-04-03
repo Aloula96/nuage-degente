@@ -1,6 +1,13 @@
+// Logic of weather with WeatherAPI
+
+// Retrieved the apiKey
 const apiKey = "1f092d0321eb4303b2270231250304";
+
+// Init base url
 const locationInput = document.getElementById("location-input");
 const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=`;
+
+// Init element html
 const searchButton = document.getElementById("search-button");
 const locationElement = document.getElementById("location");
 const region = document.getElementById("region");
@@ -10,15 +17,30 @@ const country = document.getElementById("country");
 const temperatureElement = document.getElementById("temperature");
 const descriptionElement = document.getElementById("description");
 const icon = document.getElementById("icon");
+
+// Get the weather of the search
 searchButton.addEventListener("click", () => {
   const location = locationInput.value;
   if (location) {
-    fetchWeather();
+    fetchWeather(location)
   }
 });
 
-function fetchWeather() {
-  const url = apiUrl + locationInput.value;
+// Get the weather with big city
+const footerButton = document.querySelectorAll(".location-button-city");
+
+footerButton.forEach(button => {
+  button.addEventListener("click", () => {
+    const location = button.textContent;
+    if (location) {
+      fetchWeather(location)
+    }
+  })
+});
+
+// Fetch weather data
+function fetchWeather(location) {
+  const url = apiUrl + location;
   fetch(url)
     .then((response) => response.json())
     .then((data) => {

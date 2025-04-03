@@ -6,6 +6,16 @@ body {
 
 footer {
     background-color: #4D55DD;
+    display: flex;
+    flex-direction: column;
+ padding: 5px;
+ 
+
+}
+footer .location-button-city{
+
+    color: white;
+    cursor: pointer;
 }
 .card {
     display: flex;
