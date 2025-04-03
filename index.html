@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
-    <h1>Nuage Déjenté</h1>
-    <input type="search" id="location-input">
-    <button id="search-button"  > search </button>
-
+    <header>
+        <img class="title-image" src="assets/images/logo.png" alt="Nuage Dejente logo">
+        <div class="location">
+            <input type="search" name="location-input" id="location-input" placeholder="Entrez le nom d'une ville">
+            <button id="search-button">Rechercher</button>
+        </div>
+    </header>
+    
     <div class="card">
         <section class="info-section">
           <div class="background-design">
@@ -38,33 +42,18 @@
             <p id="country"></p>
           </div>
         </section>
-        
       </div>
+
       <!-- this part is the footer --> 
       <footer>
-        
           <img src=".assets/images/logo.png" alt="">
         <button class="location-button-city">Paris</button>
         <button class="location-button-city">Lyon</button>
         <button class="location-button-city">Clermont-Ferrand</button>
         <button class="location-button-city">Marseille</button>
         <button class="location-button-city">Nice</button>
-        
       </footer>
 
-
-
-
 <script src="assets/scripts/weather.js"></script>
-    <link rel="stylesheet" href="assets/styles/style.css">
-</head>
-<body>
-    <header>
-        <img class="title-image" src="assets/images/logo.png" alt="Nuage Dejente logo">
-        <div class="location">
-            <input type="search" name="location-input" id="location-input" placeholder="Entrez le nom d'une ville">
-            <button id="search-button">Rechercher</button>
-        </div>
-    </header>
 </body>
 </html>
