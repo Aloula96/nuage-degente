@@ -4,6 +4,38 @@ body {
     background-color: #4D55CC;
 }
 
+footer {
+    background-color: #4D55DD;
+    display: flex;
+    flex-direction: column;
+ padding: 5px;
+ 
+
+}
+footer .location-button-city{
+
+    color: white;
+    cursor: pointer;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 43em;
+    margin-top: 15em;
+    height: 280px;
+    width: 580px;
+    border-radius: 25px;
+    background: lightgrey;
+    overflow: hidden;
+    transition: 100ms ease;
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 3px 4px;
+  }
+  
+  /* ---------- Info section ---------- */
+  
+  .info-section {
+    position: relative;
 header {
     display: flex;
     justify-content: space-between;

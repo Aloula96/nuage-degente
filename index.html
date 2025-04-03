@@ -5,6 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
     <title>Nuage Déjenté</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <h1>Nuage Déjenté</h1>
+    <input type="search" id="location-input">
+    <button id="search-button"  > search </button>
+
+    <div class="card">
+        <section class="info-section">
+          <div class="background-design">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="left-side">
+            <div class="weather">
+              <div >
+                <img id="icon" src="" alt="">
+              </div>
+              <p id="description" ></p>
+            </div>
+            <p id="temperature"></p>
+            <p id="tz"></p>
+          </div>
+          <div class="right-side">
+            <div>
+              <p id="localtime"></p>
+            </div>
+            <p id="location"></p>
+            <p id="region"></p>
+            <p id="country"></p>
+          </div>
+        </section>
+        
+      </div>
+      <!-- this part is the footer --> 
+      <footer>
+        
+          <img src=".assets/images/logo.png" alt="">
+        <button class="location-button-city">Paris</button>
+        <button class="location-button-city">Lyon</button>
+        <button class="location-button-city">Clermont-Ferrand</button>
+        <button class="location-button-city">Marseille</button>
+        <button class="location-button-city">Nice</button>
+        
+      </footer>
+
+
+
+
+<script src="assets/scripts/weather.js"></script>
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
