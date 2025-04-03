@@ -13,18 +13,42 @@
   </head>
   <body>
     <h1>Nuage Déjenté</h1>
-    <hr>
-    <footer>
-    
-      <div class="container">
-        <ul>
-            <li>Téléchargez l'App "Météo 14 jours" gratuite pour Android</li>
-            <li>Téléchargez l'App "Météo 14 jours" gratuite pour iOS</li>
-            <li>Téléchargez l´App "Météo 14 jours" gratuite pour Huawei</li>
-            <li>Téléchargez l'App "Météo 14 jours" gratuite pour Windows 10 </li>
-        </ul>
-      <img src="https://media.discordapp.net/attachments/1319610864890023938/1356988796301869128/weather-removebg-preview.png?ex=67ef3a8c&is=67ede90c&hm=3495306cc21d2e1c76e76c65a8edda4f6e52434b59c7ce4cbf34914d98a417e9&=&format=webp&quality=lossless&width=747&height=752" alt="Nuagedégenté">
+    <input type="search" id="location-input">
+    <button id="search-button"  > search </button>
+
+    <div class="card">
+        <section class="info-section">
+          <div class="background-design">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="left-side">
+            <div class="weather">
+              <div >
+                <img id="icon" src="" alt="">
+              </div>
+              <p id="description" ></p>
+            </div>
+            <p id="temperature"></p>
+            <p id="tz"></p>
+          </div>
+          <div class="right-side">
+            <div>
+              <p id="localtime"></p>
+            </div>
+            <p id="location"></p>
+            <p id="region"></p>
+            <p id="country"></p>
+          </div>
+        </section>
+        
       </div>
-    </footer>
-  </body>
+      
+
+
+
+
+<script src="assets/scripts/weather.js"></script>
+</body>
 </html>
