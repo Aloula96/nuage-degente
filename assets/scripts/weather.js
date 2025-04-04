@@ -8,6 +8,8 @@ const tz = document.getElementById("tz");
 const localtime = document.getElementById("localtime");
 const country = document.getElementById("country");
 const temperatureElement = document.getElementById("temperature");
+const humidity = document.getElementById("humidity");
+const wind = document.getElementById("wind");
 const descriptionElement = document.getElementById("description");
 const icon = document.getElementById("icon");
 searchButton.addEventListener("click", () => {
@@ -29,6 +31,8 @@ function fetchWeather() {
 
       icon.src = data.current.condition.icon;
       temperatureElement.textContent = data.current.temp_c + "°C";
+      humidity.textContent = data.current.humidity + "%";
+      wind.textContent = data.current.wind_kph + " km/h";
       descriptionElement.textContent = data.current.condition.text;
     })
     .catch((error) => {

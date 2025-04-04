@@ -7,13 +7,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 43em;
-    margin-top: 15em;
-    height: 280px;
+    margin-left: 23em;
+    margin-top: 5em;
+    height: 400px;
     width: 580px;
     border-radius: 25px;
-    background: lightgrey;
-    overflow: hidden;
+    background: #ec7263;
+    /* overflow: hidden; */
     transition: 100ms ease;
     box-shadow: rgba(0, 0, 0, 0.15) 2px 3px 4px;
   }
@@ -136,47 +136,4 @@ body {
     border-radius: 50%;
   }
   
-  /* ---------- Days section ---------- */
-  .days-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 25%;
-    background-color: #974859;
-    gap: 2px;
-    box-shadow: inset 0px 2px 5px #974859;
-  }
-  
-  .days-section button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    background-color: #a75265;
-    box-shadow: inset 0px 2px 5px #974859;
-    cursor: pointer;
-    transition: 100ms ease;
-    gap: 5px;
-  }
-  
-  .days-section button:hover {
-    scale: 0.9;
-    border-radius: 10px;
-  }
-  
-  .days-section .day {
-    font-size: 10pt;
-    font-weight: 500;
-    color: white;
-    opacity: 0.7;
-  }
-  
-  .icon-weather-day {
-    display: flex;
-    align-items: center;
-    width: 20px;
-    height: 100%;
-  }
   

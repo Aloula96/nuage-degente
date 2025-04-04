@@ -1,0 +1,25 @@
+{
+  "folders": [
+	{
+		"path": "../../../../../symfony/brief_shop"
+	},
+	{
+		"path": "../../../../../../wamp64/www/instatik"
+	},
+	{
+		"path": "../../../../../php/poo/form-cuisine"
+	},
+	{
+		"path": "../../../../../briefs"
+	},
+	{
+		"path": "../../../../codePort2/vs3"
+	},
+	{
+		"path": "../../.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "meteo"
+  }
+}
